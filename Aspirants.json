@@ -1,0 +1,73 @@
+[  
+    {  
+        "id":"1",
+        "name":"Akhil kamatala",
+        "branch":"CSE"
+    },
+      
+        {"id": "2",
+        "name":"Anurag",
+        "branch":"CSE"  
+    },
+        {  
+        "id": "3",    
+        "name":"Ganesh",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "4",
+        "name":"Pavitra",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "5",
+        "name":"Soujanya",
+        "branch":"CSE"    
+    },
+        {
+            "id": "6",  
+        "name":"Ashish",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "7",
+        "name":"Nihal",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "8",
+        "name":"Skumar1",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "9",
+        "name":"Skumar2",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "10",
+        "name":"Skumar3",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "11",
+        "name":"Dandi",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "12",
+        "name":"Anvesh",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "13",
+        "name":"Chaitanya",
+        "branch":"CSE"    
+    },
+        {  
+            "id": "14",
+        "name":"Vinay",
+        "branch":"CSE"    
+    }
+    
+]
