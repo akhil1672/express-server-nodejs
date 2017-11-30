@@ -5,12 +5,19 @@ const bodyparser=require('body-parser');
 let app = express();
 app.use(bodyparser());
 let flag=0;
+app.use(function (req, res, next) {
+    let logfile = fs.createWriteStream("logs.txt", { 'flags': 'a' });
+    logfile.write("\r\nFile accessed at " + new Date() + "\r\n");
+    logfile.end();
+    next();
+})
 app.get('/',function(req,res)
 {
     res.sendFile('form.html',{root: './'});
 });
 app.post('/',function(req,res)
 {
+    //console.log(req.body);
     let filepath=req.body.path;
     let size=req.body.teamsize;
     fs.readFile(filepath, function (err, data) {
@@ -87,9 +94,9 @@ app.post('/',function(req,res)
                 console.log('wrote all data to file');
             });
             ws.end();
-            let logfile=fs.createWriteStream("logs.txt",{'flags':'a'});
+            /*let logfile=fs.createWriteStream("logs.txt",{'flags':'a'});
             logfile.write("\r\nFile accessed at "+new Date()+"\r\n");
-            logfile.end();
+            logfile.end();*/
             let fileread = fs.createReadStream('C:/Users/Akhil/Documents/VScode/randomteamcreator/teams.txt');
             fileread.pipe(res);
         }
